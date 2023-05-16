@@ -1,0 +1,29 @@
+.timeline
+  position: relative
+  display: flex
+  align-items: center
+  user-select: none
+  touch-action: none
+  width: 1000px
+  height: 20px
+
+  &__track
+    background-color: #4A525F
+    position: relative
+    flex-grow: 1
+    height: 4px
+
+  &__range
+    position: absolute
+    background-color: #15A9BA
+    height: 100%
+
+  &__thumb
+    display: block
+    width: 10px
+    height: 10px
+    background-color: transparent
+    border-radius: 10px
+
+    &:hover
+      background-color: #15A9BA

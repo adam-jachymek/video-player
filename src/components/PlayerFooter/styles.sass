@@ -1,0 +1,65 @@
+@import 'styles/base'
+
+.player-footer
+  background-color: $color-white
+  border-bottom-left-radius: 5px
+  border-bottom-right-radius: 5px
+
+  &__header
+    padding: $s-xs $s-base
+
+  &__title
+    font-size: $font-size-h1
+    margin-top: $s-lg
+    margin-bottom: $s-sm
+
+  &__description
+    font-size: $font-size-base
+    color: $color-dark-gray
+    line-height: $line-height-lg
+    margin-bottom: $s-base
+
+  &__uploader
+    display: flex
+    align-items: center
+    gap: $s-base
+
+  &__user-avatar
+    height: 45px
+    width: 45px
+    border-radius: 100%
+
+  &__username
+    font-weight: 600
+
+  &__user-followers
+    font-size: $font-size-small
+    color: $color-gray
+    margin-top: $s-xs
+
+  &__footer
+    padding: $s-base $s-base
+    display: flex
+    align-items: center
+    justify-content: space-between
+    border-top: 1px solid $color-light-gray
+    padding-top: $s-base
+
+  &__uploaded
+    font-size: $font-size-small
+    text-align: right
+
+  &__uploaded-title
+    color: $color-gray
+    margin-bottom: $s-xs
+
+
+@include media-breakpoint-up(md)
+
+  .player-footer
+
+    &__header
+      padding: $s-xs $s-lg
+
+    &__footer
+      padding: $s-medium $s-lg

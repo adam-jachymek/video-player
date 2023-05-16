@@ -1,0 +1,25 @@
+@import 'styles/base'
+
+.app
+  max-width: 1140px
+  margin: 0 auto
+
+  &__columns
+    display: flex
+    flex-direction: column
+    gap: $s-lg
+
+
+@include media-breakpoint-up(lg)
+
+  .app
+
+    &__columns
+      flex-direction: row
+      margin-top: $s-lg
+
+    &__column-left
+      max-width: 850px
+
+    &__column-right
+      max-width: 260px

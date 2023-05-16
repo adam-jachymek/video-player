@@ -1,0 +1,27 @@
+@import 'styles/base'
+
+.related-video
+  padding: $s-base $s-base 1px $s-base
+  border-bottom: 1px solid $color-light-gray
+
+  &__thumbnail
+    aspect-ratio: 16 / 8
+    background-color: #3C424D
+    border-radius: 2px
+    position: relative
+
+  &__duration
+    position: absolute
+    left: 0
+    bottom: 0
+    color: $color-white
+    font-size: $font-size-small
+    background-color: #1C2935
+    padding: 8px $s-medium
+    border-radius: 2px
+
+  &__title
+    margin-top: $s-sm
+    line-height: $line-height-lg
+    font-size: $font-size-base
+    font-weight: 600

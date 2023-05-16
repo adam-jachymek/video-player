@@ -1,0 +1,32 @@
+@import 'styles/base'
+
+$border-radius:   $s-lg
+
+.follow-button
+  display: flex
+  padding: 0
+  align-items: center
+  border: none
+  background-color: transparent
+  color: $color-white
+  cursor: pointer
+
+  &__icon
+    padding: $s-xs $s-sm
+    font-size: $font-size-lg
+    font-weight: 600
+    background-color: $color-green
+    border: 1px solid $color-green-dark
+    border-top-left-radius: $border-radius
+    border-bottom-left-radius: $border-radius
+
+  &__text
+    padding: 7px $s-base 7px $s-sm
+    font-size: $font-size-small
+    background-color: $color-green-light
+    border: 1px solid $color-green-dark
+    border-top-right-radius: $border-radius
+    border-bottom-right-radius: $border-radius
+
+  &:hover > &__icon, &:hover > &__text
+    background-color: $color-green-dark
